@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  plan = {
+    info:{
+      type: 'Simples',
+      price: 99
+    }
+  }
 }

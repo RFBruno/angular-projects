@@ -12,7 +12,7 @@ export class CardComponent {
   plan:IPlan = {
     info:{
       type: 'Simples',
-      price: 99
+      price: 100
     }
   }
 }

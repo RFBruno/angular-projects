@@ -1,3 +1,4 @@
+@import "variables";
 
 .card-purple__button{
     font-size: 16px;
@@ -5,7 +6,7 @@
     text-align: center;
     margin-top: 10px;
     border-radius: 25px;
-    background-color: #020529;
+    background-color: $bgColor;
     cursor: pointer;
     padding: 10px;
 }

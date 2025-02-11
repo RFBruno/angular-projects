@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { IPlan } from '../interfaces/interfaces';
+
+
 
 @Component({
   selector: 'app-card',
@@ -6,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  plan = {
+  plan:IPlan = {
     info:{
       type: 'Simples',
       price: 99

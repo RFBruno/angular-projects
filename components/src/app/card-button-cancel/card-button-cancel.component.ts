@@ -14,7 +14,8 @@ import { Component } from '@angular/core';
         cursor: pointer;
         padding: 10px;
     }
-  `
+  `,
+  standalone: false
 })
 export class CardButtonCancelComponent {
 

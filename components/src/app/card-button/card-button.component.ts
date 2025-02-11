@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   template:`
     <div class="card__button card__item">Adquirir</div>
   `,
-  styleUrl: './card-button.component.scss'
+  styleUrl: './card-button.component.scss',
+  standalone: false
 })
 export class CardButtonComponent {
 

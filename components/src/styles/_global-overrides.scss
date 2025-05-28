@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+:root {
+    @include mat.slider-overrides(
+        (
+            hover-state-layer-color: rgba(0, 255, 255, 0.336),
+            focus-state-layer-color: rgba(0, 255, 255, 0.336),
+
+        )
+    );
+}
+
+.mdc-slider__track--active_fill {
+    border-color: aqua !important;
+}
+
+.mdc-slider__thumb-knob {
+    border-color: aqua !important;
+}

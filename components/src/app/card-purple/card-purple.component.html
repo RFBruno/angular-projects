@@ -1,6 +1,11 @@
 <div class="card-purple">
   <div class="card-purple__plan card-purple__item">Plano <b>Completo</b></div>
-  <div class="card-purple__price card-purple__item">R$ 250,00</div>
+  <div class="card-purple__price card-purple__item">R$ 250,00/Mês</div>
 
   <app-card-purple-button></app-card-purple-button>
+  <app-card-button-cancel></app-card-button-cancel>
+
+  <mat-slider min="1" max="5" step="0.5">
+    <input matSliderThumb value="1.5">
+  </mat-slider>
 </div>

@@ -1,0 +1,20 @@
+
+<!-- Property binding -->
+<h4>Property</h4>
+<input id="my-input" [value]="inputValue" [type]="inputType" [disabled]="isDisabled">
+<br>
+
+<button type="button" (click)="setPasswordType()">Password</button>
+<button type="button" (click)="setTextType()">Text</button>
+<br/>
+
+<button type="button" (click)="enableInput()">Enble</button>
+<button type="button" (click)="disableInput()">Disable</button>
+<br>
+
+
+<!-- Attribute binding -->
+<hr>
+<h4>Attribute</h4>
+<button type="button" [attr.title]="buttonTitle">Test</button>
+<button type="button" [attr.disabled]="buttonDisabled ? true : null">Disabled</button>

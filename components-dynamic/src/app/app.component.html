@@ -18,3 +18,28 @@
 <h4>Attribute</h4>
 <button type="button" [attr.title]="buttonTitle">Test</button>
 <button type="button" [attr.disabled]="buttonDisabled ? true : null">Disabled</button>
+
+<!-- Style binding -->
+<hr>
+<h4>Style</h4>
+<button style="width: 100px; background-color: aqua;">Button 0</button><br>
+<button [style.width]="widthButton1" [style.backgroundColor]="'blue'">Button 1</button><br>
+<button [style.width.px]="widthButton2" [style.backgroundColor]="'pink'">Button 2</button><br>
+<button [style]="'width: 140px; background-color: brown;'">Button 3</button><br>
+<button [style]="{width: '150px', backgroundColor: 'aqua'}">Button 4</button><br>
+<button [style]="styleObj">Button 5</button><br>
+
+<button (click)="updateStyleObj()">Update Style</button>
+<button (click)="updateStyleObjCorrect()">Update Style Correct</button>
+<button (click)="updateWidth()">Update Width</button>
+
+<!-- Class binding -->
+<hr>
+<h4>Class</h4>
+<button [class.red]="isRedButton" (click)="isGreenButton = false">Red</button>
+<button [class.green]="true" (click)="isGreenButton = true">Green</button>
+
+<button [class]="{
+  'green': isGreenButton,
+  'red': !isGreenButton,
+}">Object</button>

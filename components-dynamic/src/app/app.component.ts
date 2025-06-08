@@ -14,6 +14,32 @@ export class AppComponent {
   buttonTitle:String = "Title";
   buttonDisabled:Boolean = true;
 
+  widthButton1:String = "110px";
+  widthButton2:Number = 120;
+  styleObj = {
+    width: "160px",
+    backgroundColor: "grey",
+  };
+
+  isRedButton = true;
+  isGreenButton = false;
+
+  updateWidth(){
+    this.widthButton2 = 200;
+  }
+
+  updateStyleObj() {
+    this.styleObj.width = "170px";
+    this.styleObj.backgroundColor = "lightblue";
+  }
+
+  updateStyleObjCorrect() {
+    this.styleObj = {
+      width: "170px",
+      backgroundColor: "lightblue"
+    }
+  }
+
   setPasswordType():void {
     this.inputType = "password"
   }
@@ -29,4 +55,5 @@ export class AppComponent {
   disableInput():void{
     this.isDisabled = true;
   }
+
 }

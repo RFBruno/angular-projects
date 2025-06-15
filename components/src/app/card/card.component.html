@@ -1,8 +1,8 @@
 <div class="card">
-  <div class="card__plan card__item">Plano <b>{{plan.info.type}}</b></div>
-  <div class="card__price card__item">R$ {{plan.info.price}},00/Mês</div>
+  <div class="card__plan card__item">Plano <b>{{planCard.info.type}}</b></div>
+  <div class="card__price card__item">R$ {{planCard.info.price}},00/Mês</div>
 
-  <app-card-button></app-card-button>
+  <app-card-button (eventClick)="clickedButton()"></app-card-button>
   <app-card-button-cancel></app-card-button-cancel>
 
   <mat-slider min="1" max="5" step="0.5">

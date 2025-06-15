@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IPlan } from '../interfaces/interfaces';
 
 
@@ -10,10 +10,15 @@ import { IPlan } from '../interfaces/interfaces';
   standalone: false
 })
 export class CardComponent {
-  plan:IPlan = {
+  @Input({required: true}) planCard:IPlan = {
     info:{
-      type: 'Simples',
-      price: 100
+      type: '',
+      price: 0
     }
+  }
+
+
+  clickedButton():void{
+    console.log("🚀 ~ CardComponent ~ clickedButton ~ " );
   }
 }

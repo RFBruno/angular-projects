@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IPlan } from './interfaces/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'components';
+  plan: IPlan = {
+    info: {
+      type: 'Simples',
+      price: 120
+    }
+  }
 }

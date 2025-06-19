@@ -2,3 +2,5 @@
   <app-card [planCard]="plan"></app-card>
   <app-card-purple></app-card-purple>
 </div>
+
+<input #myInput type="text" (keyup)="handlePlanType(myInput.value)" placeholder="Digito o plano">

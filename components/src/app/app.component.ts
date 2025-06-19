@@ -15,4 +15,13 @@ export class AppComponent {
       price: 120
     }
   }
+
+  handlePlanType(planType: string): void {
+    this.plan = {
+      info: {
+        type: planType,
+        price: 120
+      }
+    };
+  }
 }

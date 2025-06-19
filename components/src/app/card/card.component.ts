@@ -10,12 +10,23 @@ import { IPlan } from '../interfaces/interfaces';
   standalone: false
 })
 export class CardComponent {
-  @Input({required: true}) planCard:IPlan = {
+  _planCard:IPlan = {
     info:{
       type: '',
       price: 0
     }
   }
+
+  @Input({required: true}) set planCard(value:IPlan){
+    this._planCard = value;
+    this._planCard.info.type = value.info.type.toLocaleUpperCase();
+  }
+
+  get planCard():IPlan {
+    return this._planCard;
+  }
+
+  
 
 
   clickedButton():void{

@@ -1,0 +1,29 @@
+.card {
+    max-width: 350px;
+    border-radius: 25px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+    &--orange {
+        background-color: rgb(124, 57, 1);
+    }
+
+    &--purple {
+        background-color: rgb(90, 4, 90);
+    }
+
+    &--item {
+        padding: 10px;
+    }
+
+    &--plan {
+        font-size: 22px;
+    }
+
+    &--price {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+}

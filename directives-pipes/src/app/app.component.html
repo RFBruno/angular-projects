@@ -1,0 +1,13 @@
+<!-- ngModel -->
+<h4>ngModel</h4>
+<h3>Nome:</h3>
+<input type="text" [(ngModel)]="name">
+<h3>Nome digitado: {{name}}</h3>
+
+<!-- ngIf -->
+<div style="background-color: cadetblue;" *ngIf="showDiv; else name ">É Div</div>
+<ng-template #name>
+  <div>Else template</div>
+</ng-template>
+
+<button (click)="toggleDiv()">Show</button>

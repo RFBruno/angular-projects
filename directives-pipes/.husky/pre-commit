@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# 1. Roda o linter e o formatador nos arquivos staged
+npx lint-staged
+
+# 2. Verifica se há palavras proibidas nos arquivos staged
+# A verificação só é executada se o comando anterior for bem-sucedido.
+# Se a verificação falhar (encontrar palavras proibidas), o commit é barrado.
+npm run check:forbidden-words

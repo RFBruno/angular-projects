@@ -11,8 +11,20 @@ export class AppComponent {
 
   name:string = "teste";
   showDiv: boolean = false;
+  personSelectedIndex: number | undefined;
+  listPeople = [
+    { name: 'Felipe Freitas', age: 26 },
+    { name: 'Fulano da Silva', age: 34 },
+    { name: 'Jorginho Carvalho', age: 55 },
+    { name: 'Joãozinho da Silva', age: 18 }
+  ];
 
   toggleDiv(){
     this.showDiv = !this.showDiv;
+  }
+
+  selectPerson(index: number) {
+    this.personSelectedIndex = index;
+    console.log("Teste barrando commit");
   }
 }

@@ -1,13 +1,43 @@
 <!-- ngModel -->
 <h4>ngModel</h4>
 <h3>Nome:</h3>
-<input type="text" [(ngModel)]="name">
-<h3>Nome digitado: {{name}}</h3>
+<input type="text" [(ngModel)]="name" />
+<h3>Nome digitado: {{ name }}</h3>
 
 <!-- ngIf -->
-<div style="background-color: cadetblue;" *ngIf="showDiv; else name ">É Div</div>
-<ng-template #name>
+<hr />
+<h4>ngIf</h4>
+<div style="background-color: cadetblue" *ngIf="showDiv; else template">
+  É Div
+</div>
+<ng-template #template>
   <div>Else template</div>
 </ng-template>
 
 <button (click)="toggleDiv()">Show</button>
+
+
+<!-- ngFor -->
+<hr />
+<h4>ngFor</h4>
+<div class="list">
+  <div 
+    class="item" 
+    *ngFor="
+      let person of listPeople; 
+      let i = index; 
+      let isOdd = odd; 
+      let isLast = last; 
+      let isFirst = first; 
+      let isEvent = even;"
+    [class.item--odd]="isOdd"
+    [class.item--highlighted]="personSelectedIndex === i"
+    (click)="selectPerson(i)"
+  >
+    <p class="item__name">{{ i }} - {{ person.name }}</p>
+    <p class="item__age">{{ person.age }} anos</p>
+
+    <p *ngIf="isFirst">É o primeiro</p>
+    <p *ngIf="isLast">É o último</p>
+  </div>
+</div>

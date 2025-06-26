@@ -1,0 +1,5 @@
+{
+  "*.{ts,js,html}": [
+    "sh -c 'git diff --cached --name-only | xargs grep -E \"(console\\.log|debugger|FIXME|TODO)\"' && exit 1 || exit 0"
+  ]
+}

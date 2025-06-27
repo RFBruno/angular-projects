@@ -23,5 +23,9 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "paths":{
+    "@components/*":["./src/app/components/*"]
   }
+  
 }

@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prepare": "husky",
-    "check:forbidden-words": "npx lint-staged --allow-empty --config .lintstagedrc-check"
+    "check:forbidden-words": "npx lint-staged --allow-empty --config .lintstagedrc-check",
+    "lint": "ng lint"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,scss,html}": [
@@ -35,6 +36,8 @@
     "@angular/cli": "^19.1.6",
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "angular-eslint": "20.1.1",
+    "eslint": "^9.29.0",
     "husky": "^9.1.7",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
@@ -43,6 +46,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "lint-staged": "^16.1.2",
-    "typescript": "~5.7.2"
+    "typescript": "~5.7.2",
+    "typescript-eslint": "8.34.1"
   }
 }

@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo "--- Executando o pre-commit hook ---"
+
 # 1. Roda o linter e o formatador nos arquivos staged
 npx lint-staged
 

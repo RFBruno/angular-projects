@@ -1,8 +1,3 @@
-.list {
-    background-color: black;
-    padding: 3px;
-}
-
 .item {
     padding: 15px;
     background-color: beige;
@@ -27,19 +22,4 @@
         background-color: rgb(06, 229, 54);
         border: 3px solid rgb(168, 249, 131);
     }
-}
-
-.active {
-    color: white;
-    background-color: green;
-}
-
-.partial {
-    color: white;
-    background-color: orange;
-}
-
-.blocked {
-    color: white;
-    background-color: red;
 }

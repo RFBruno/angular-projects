@@ -19,6 +19,10 @@ export class AppComponent {
     { name: 'Joãozinho da Silva', age: 18 }
   ];
 
+  person = { name: 'Felipe', status: 1 };
+  person2 = { name: 'Matheus', status: 2 };
+  person3 = { name: 'Luis', status: 3 };
+
   toggleDiv(){
     this.showDiv = !this.showDiv;
   }

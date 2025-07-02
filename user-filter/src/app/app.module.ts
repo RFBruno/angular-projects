@@ -12,7 +12,6 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     BrowserAnimationsModule,
     ComponentsModule,
-    AngularMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

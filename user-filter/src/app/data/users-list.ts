@@ -17,12 +17,12 @@ export const UsersList: IUser[] = [
         telefone: "11912345678",
         ativo: true,
         funcao: "Desenvolvedor",
-        dataCadastro: new Date("2023-08-01T09:00:00.000Z"),
+        dataCadastro: new Date("2025-06-01T09:00:00.000Z"),
         status: {
             online: true,
             verificado: true,
             assinaturaAtiva: true,
-            ultimoAcesso:new Date("2023-08-02T09:00:00.000Z")
+            ultimoAcesso:new Date("2025-06-02T09:00:00.000Z")
         }
     },
     {
@@ -40,12 +40,12 @@ export const UsersList: IUser[] = [
         telefone: "21956789101",
         ativo: false,
         funcao: "Designer",
-        dataCadastro: new Date("2023-08-05T09:00:00.000Z"),
+        dataCadastro: new Date("2025-06-05T09:00:00.000Z"),
         status: {
             online: false,
             verificado: false,
             assinaturaAtiva: false,
-            ultimoAcesso:new Date("2023-08-06T09:00:00.000Z")
+            ultimoAcesso:new Date("2025-06-06T09:00:00.000Z")
         }
     },
     {
@@ -63,12 +63,12 @@ export const UsersList: IUser[] = [
         telefone: "31911121314",
         ativo: true,
         funcao: "Gerente",
-        dataCadastro: new Date("2023-08-10T09:00:00.000Z"),
+        dataCadastro: new Date("2025-06-10T09:00:00.000Z"),
         status: {
             online: false,
             verificado: true,
             assinaturaAtiva: false,
-            ultimoAcesso:new Date("2023-08-12T09:00:00.000Z")
+            ultimoAcesso:new Date("2025-06-12T09:00:00.000Z")
         }
     },
     {
@@ -86,12 +86,12 @@ export const UsersList: IUser[] = [
         telefone: "51915161718",
         ativo: false,
         funcao: "Analista",
-        dataCadastro: new Date("2023-08-15T09:00:00.000Z"),
+        dataCadastro: new Date("2025-06-15T09:00:00.000Z"),
         status: {
             online: true,
             verificado: false,
             assinaturaAtiva: true,
-            ultimoAcesso:new Date("2023-08-18T09:00:00.000Z")
+            ultimoAcesso:new Date("2025-06-18T09:00:00.000Z")
         }
     },
     {
@@ -109,12 +109,12 @@ export const UsersList: IUser[] = [
         telefone: "81919202122",
         ativo: true,
         funcao: "Diretor",
-        dataCadastro: new Date("2023-08-20T09:00:00.000Z"),
+        dataCadastro: new Date("2025-06-20T09:00:00.000Z"),
         status: {
             online: false,
             verificado: true,
             assinaturaAtiva: false,
-            ultimoAcesso:new Date("2023-08-25T09:00:00.000Z")
+            ultimoAcesso:new Date("2025-06-25T09:00:00.000Z")
         }
     }
 ];
